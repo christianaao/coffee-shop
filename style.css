@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+/* *Fonts*
+Headings - Playfair
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.playfair-<uniquifier> {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+Sub Headings - EB Garamond
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 800
+
+.eb-garamond-<uniquifier> {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+Main Text - Montserrat
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+/* *Colour Palette*
+
+Text - #3C2313 - Bistre
+Background - #FDF5E6 - Old lace
+Main 1 - #D2B48C - Tan
+Main 2 - #0E4749 - Midnight green
+Accent - #D7A498 - Melon
+*/
+/* *List of classes/id*
+class:
+logo
+navbar
+nav-links
+nav-socials
+footer-info
+
+menu
+format
+item
+menu-2
+
+
+id:
+double-item
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FDF5E6;
+    color: #3C2313;
+    line-height: 1.5;
+}
+.img-backdrop {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    min-height: 450px;
+    /* margin-bottom: 20px; */
+    /* text-align: center; */
+}
+.img-backdrop h2, .img-backdrop h4{
+    /* background-color: #D7A498; */
+    max-width: none;
+    color: #3C2313;
+    backdrop-filter: blur(10px);
+}
+.sub-heading {
+    font-style: italic;
+    font-weight: 725;
+}
+#welcome{
+    background-image: url('coffee-shop2.jpg');
+}
+#customers {
+    background-image: url('3drinks.jpg');
+}
+#about{
+    background-image: url('latte.jpeg');
+}
+#contact {
+    background-image: url('coffee-shop.jpg');
+}
+#welcome h2, #welcome h4 {
+    backdrop-filter: blur(80px);
+}
+#contact h2, #contact h4{
+    color: #D7A498;
+}
+.navbar {
+    background-color: #D2B48C;
+    box-shadow: 0px 2px 2px #6e5f4a;
+    height: 80px;
+    max-width: none;
+    padding: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: auto; 
+    max-height: 90px;
+    image-rendering: crisp-edges;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-width: 590px;
+    padding: 5px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    color: #0E4749;
+    text-align: right;
+} 
+.nav-links a{
+    color: #0E4749;
+    text-decoration: none;
+    padding: 8px;
+}
+.nav-links a:hover {
+    color: #3C2313
+}
+/* header {
+    background-color: #D7A498;
+    color: #3C2313;
+} */
+.review {
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    /* flex: grow; */
+    min-width: 225px;
+    /* max-height: 350px; */
+    background-color: #D7A498;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0px 2px 2px #6e5f4a;
+    padding: 15px 20px;
+}
+.menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+}
+.menu-2 {
+    text-align: center;
+}
+.format {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item img{
+    /* need to figure out how to make images not go off the page */
+    /* flex-wrap: wrap; */
+
+    /* min-width: 200px; */
+    max-width: 100%;
+    /* height: auto; */
+    width: 500px;
+    border-radius: 50%;
+    padding: 20px;
+}
+/* #double-item {
+    text-align: center;
+} */
+#double-item img{
+    max-width: 45%;
+    border-radius: 50%;
+    padding: 5px;
+}
+#single-item img{
+    max-width: 35%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+button {
+    background-color: #D7A498;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-variant-caps: small-caps;
+    font-size: 16px;
+}
+/* table {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border-spacing: 40px;
+}
+th {
+    text-align: left;
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #D7A498
+}
+th, td {
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: ;
+} */
+.opening-hours {
+    margin: 10px auto;
+}
+#opening-hours {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    display: table;
+    max-width: 450px;
+    width: 80%;
+    margin: 10px auto;
+    font-family: Montserrat;
+    background: transparent;
+    padding: 5px 0;
+    color: #3C2313;
+    font-size: 14px;
+    box-shadow: 0 1px 4px 0 #6e5f4a;
+
+}
+.cell {
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #D7A498;
+    vertical-align: middle;
+}
+/* .day {
+    background-color: #D7A498;
+    box-shadow: none;
+    color: #0E4749;
+    font-weight: 600
+} */
+iframe { 
+    height: 300px;
+    width: 100%;
+}
+.delivery img{
+    width: 150px;
+    height: auto;
+    padding: 8px;
+    border-radius: 25%;
+}
+a {
+    color: #D7A498;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #6e5f4a;
+}
+a:visited{
+    color: #0E4749;
+}
+h1 {
+    font-family: "Playfair", serif;
+    display: flex;
+    text-align: center;
+}
+h2 {
+    font-family: "Playfair", serif;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+h3 {
+    font-family: "EB Garamond", serif;
+    margin: 10px;
+    padding-top: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+h4 {
+    font-family: "EB Garamond", serif;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.nav-socials {
+    background-color: #D2B48C;
+    max-width: none;
+    padding: 10px;
+}
+footer {
+    background-color: #0E4749;
+    padding: 20px;
+    color: #D7A498;
+    text-align: center;
+    font-style: italic;
+}
+/* need to figure out how to make media query work */
+@media (max-height: 351px) {
+    .box {
+        flex-direction: column;
+        display:block;
+    }
+}
