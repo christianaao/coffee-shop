@@ -89,6 +89,10 @@ body {
     color: #D7A498;
     backdrop-filter: blur(80px);
 }
+#customers h2, #about h4{
+    color: #df8d7b;
+    backdrop-filter: blur(80px)
+}
 #about h2, #about h4{
     color: #D7A498;
 }
