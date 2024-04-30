@@ -43,23 +43,7 @@ Main 1 - #D2B48C - Tan
 Main 2 - #0E4749 - Midnight green
 Accent - #D7A498 - Melon
 */
-/* *List of classes/id*
-class:
-logo
-navbar
-nav-links
-nav-socials
-footer-info
 
-menu
-format
-item
-menu-2
-
-
-id:
-double-item
-*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -96,13 +80,17 @@ body {
     background-image: url('3drinks.jpg');
 }
 #about{
-    background-image: url('latte.jpeg');
+    background-image: url('cinnamon_roll2.jpeg');
 }
 #contact {
-    background-image: url('coffee-shop.jpg');
+    background-image: url('cafe-sign.jpg');
 }
 #welcome h2, #welcome h4 {
+    color: #D7A498;
     backdrop-filter: blur(80px);
+}
+#about h2, #about h4{
+    color: #D7A498;
 }
 #contact h2, #contact h4{
     color: #D7A498;
@@ -113,8 +101,6 @@ body {
     height: 80px;
     max-width: none;
     padding: 10px;
-}
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,19 +164,12 @@ body {
     align-items: center;
 }
 .item img{
-    /* need to figure out how to make images not go off the page */
-    /* flex-wrap: wrap; */
-
-    /* min-width: 200px; */
     max-width: 100%;
     height: auto;
     width: 500px;
     border-radius: 50%;
     padding: 20px;
 }
-/* #double-item {
-    text-align: center;
-} */
 #double-item img{
     max-width: 45%;
     border-radius: 50%;
@@ -228,7 +207,7 @@ body {
     flex-basis: 50%;
 }
 .col h2 {
-    color: #FDF5E6;
+    color: #D7A498;
     /* font-size: 100px; */
 }
 .col p{
@@ -252,7 +231,7 @@ body {
 .card {
     width: 250px;
     height: 280px;
-    display: inline-block;
+    display:inline-table;
     border-radius: 10px;
     padding: 25px 25px;
     box-sizing: border-box;
@@ -278,79 +257,14 @@ body {
     transform: translateY(-10px);
 }
 .card h4{
-    font-size: larger;
+    font-size:larger;
     color: #FDF5E6;
-    text-shadow: 0 0 5px #999;
+    text-shadow: 5px 5px 5px #000;
 }
 .card p{
-    text-shadow: 0 0 15px #3C2313;
-}
-/* Previous Attempt */
-/* .events {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 220vh;
-    width: 100%;
-    background: url('cafe-lamp.jpg');
-    background-size: cover;
-}
-.activity {
-    width: 300px;
-    border-bottom: 20px solid #3C2313;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.activity h3 {
     color: #FDF5E6;
-    background: #3C2313;
-    padding: 10px 20px;
-    margin-bottom: 0;
-    font-size: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.1em #000;
 }
-.activity ul{
-    position: relative;
-    background-color: #FDF5E6;
-}
-.activity ul li{
-    list-style: none;
-    padding: 10px;
-    width: 100%;
-    background-color: #D2B48C;
-    box-shadow: 0 5px 25px #6e5f4a;
-    transform: 0.5s;
-}
-.activity ul:hover li{
-    opacity: 0.2;
-}
-.activity ul li:hover {
-    transform: scale(1.1);
-    z-index: 100;
-    background-color: #D7A498;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
-    color: #3C2313;
-    opacity: 1;
-}
-.activity ul li span {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    background: #FDF5E6;
-    color: #3C2313;
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    transform: translateY(-2px);
-}
-.activity ul li:hover span {
-    background: #3C2313;
-    color: #FDF5E6;
-} */
 /* Upcoming Events Section Ends */
 fieldset {
     margin: 20px;
@@ -424,7 +338,6 @@ input[type="submit"] {
     color: #3C2313;
     font-size: 14px;
     box-shadow: 0 1px 4px 0 #6e5f4a;
-
 }
 .cell {
     display: table-cell;
@@ -523,10 +436,46 @@ footer {
     text-align: center;
     font-style: italic;
 }
-/* need to figure out how to make media query work */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    .logo img{
+            width: 100%;
+            max-height: auto;
+        }
+    .navbar{
+            height: 100%;
+            max-width: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-socials{
+            height: 100%;
+            max-width: none;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        }
     .review {
         display: flex;
         flex-wrap: wrap;
+    }
+    .containter {
+        width: 100%;
+        height: 300vh;
+    }
+    .card {
+        width: 50%;
+        height: auto;
+    }
+    fieldset {
+        margin: 20px;
+        padding: 5px 20px;
+        border: solid #D7A498;
+        border-radius: 20px;
+        width: 90%;
     }
 }
