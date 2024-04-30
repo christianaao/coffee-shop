@@ -75,6 +75,7 @@ body {
     background-size: 100%;
     background-position: 100%;
     min-height: 450px;
+    margin: 20px 0;
     /* margin-bottom: 20px; */
     /* text-align: center; */
 }
@@ -182,7 +183,7 @@ body {
 
     /* min-width: 200px; */
     max-width: 100%;
-    /* height: auto; */
+    height: auto;
     width: 500px;
     border-radius: 50%;
     padding: 20px;
@@ -200,36 +201,211 @@ body {
     border-radius: 50%;
     padding: 5px;
 }
-
-button {
-    background-color: #D7A498;
-    padding: 15px;
-    margin: 5px;
-    border: none;
+.left-box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+/* Upcoming Events Section Starts */
+.containter {
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('cafe-lamp.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.event-row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50%;
+}
+.col h2 {
+    color: #FDF5E6;
+    /* font-size: 100px; */
+}
+.col p{
+    color: #FDF5E6;
+    font-size: 16px;
+    line-height: 15px;
+}
+.col button{
+    width: 180px;
+    color: #3C2313;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #D7A498;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 30px;
+    /* align-items: center; */
+}
+.card {
+    width: 250px;
+    height: 280px;
+    display: inline-block;
     border-radius: 10px;
-    font-family: Montserrat;
-    font-variant-caps: small-caps;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url('latte2.jpg');
+}
+.card2{
+    background-image: url('mic.jpg');
+}
+.card3{
+    background-image: url('tart.jpg');
+}
+.card4{
+    background-image: url('book-brew.jpg');
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card h4{
+    font-size: larger;
+    color: #FDF5E6;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #3C2313;
+}
+/* Previous Attempt */
+/* .events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220vh;
+    width: 100%;
+    background: url('cafe-lamp.jpg');
+    background-size: cover;
+}
+.activity {
+    width: 300px;
+    border-bottom: 20px solid #3C2313;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.activity h3 {
+    color: #FDF5E6;
+    background: #3C2313;
+    padding: 10px 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.activity ul{
+    position: relative;
+    background-color: #FDF5E6;
+}
+.activity ul li{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background-color: #D2B48C;
+    box-shadow: 0 5px 25px #6e5f4a;
+    transform: 0.5s;
+}
+.activity ul:hover li{
+    opacity: 0.2;
+}
+.activity ul li:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background-color: #D7A498;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    color: #3C2313;
+    opacity: 1;
+}
+.activity ul li span {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #FDF5E6;
+    color: #3C2313;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+.activity ul li:hover span {
+    background: #3C2313;
+    color: #FDF5E6;
+} */
+/* Upcoming Events Section Ends */
+fieldset {
+    margin: 20px;
+    padding: 5px 20px;
+    border: solid #D7A498;
+    border-radius: 20px;
+    min-width: 450px;
+    /* max-width: 450px; */
+}
+legend{
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 5px;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 16px; */
+}
+label:first-of-type{
+    margin-top: 0px;
+}
+input{
+    padding: 8px;
+    border: 2.2px solid #D7A498;
+    font-family: "Montserrat", sans-serif;
+}
+input[type="email"], input[type="text"] {
+    width: 100%;
+}
+select {
+    padding: 8px;
+    border: 2.2px solid #D7A498;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+textarea{
+    font-family: "Montserrat", sans-serif;
+    min-height: 200px;
+    min-width: 100%;
+    padding: 8px;
+    border: 2.2px solid #D7A498;
+}
+input[type="submit"] {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    background-color: #D7A498;
+    color: #3C2313;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
-/* table {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    border-spacing: 40px;
-}
-th {
-    text-align: left;
-}
-table, th, td {
-    border-collapse: collapse;
-    border: 1px solid #D7A498
-}
-th, td {
-    padding: 10px;
-}
-tr:nth-child(even) {
-    background-color: ;
-} */
 .opening-hours {
     margin: 10px auto;
 }
@@ -242,7 +418,7 @@ tr:nth-child(even) {
     max-width: 450px;
     width: 80%;
     margin: 10px auto;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     background: transparent;
     padding: 5px 0;
     color: #3C2313;
@@ -258,28 +434,41 @@ tr:nth-child(even) {
     border-right: 1px solid #D7A498;
     vertical-align: middle;
 }
-/* .day {
-    background-color: #D7A498;
-    box-shadow: none;
-    color: #0E4749;
-    font-weight: 600
-} */
-iframe { 
+iframe {
     height: 300px;
     width: 100%;
+    padding-bottom: 10px;
+}
+.address{
+    text-align: center;
+    font-weight: 550;
+}
+.address a{
+    text-align: center;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #3C2313;
+}
+.address a:hover {
+    color: #D7A498;
 }
 .delivery img{
+    align-items: center;
     width: 150px;
     height: auto;
     padding: 8px;
+    margin: 0 5px;
     border-radius: 25%;
+}
+.brand-logo {
+    display: flex;
+    justify-content: center;
 }
 a {
     color: #D7A498;
     font-style: italic;
     font-weight: 500;
     text-decoration: none;
-    
 }
 a:hover {
     color: #6e5f4a;
@@ -311,6 +500,11 @@ h4 {
     font-size: 18px;
     text-align: center;
 }
+h5 {
+    font-family: "EB Garamond", serif;
+    margin: 10px;
+    text-align: center;
+}
 p {
     font-family: "Montserrat", sans-serif;
     margin: 10px;
@@ -330,9 +524,9 @@ footer {
     font-style: italic;
 }
 /* need to figure out how to make media query work */
-@media (max-height: 351px) {
-    .box {
-        flex-direction: column;
-        display:block;
+@media screen and (max-width: 500px) {
+    .review {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
