@@ -139,6 +139,38 @@ body {
     background-color: #D7A498;
     color: #3C2313;
 } */
+html {
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C2313;
+    border-radius: .5rem;
+    padding: .5rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+.arrow span{
+    color: #D7A498;
+    font-size:1rem;
+    transition: 0.2 ease-out;
+}
+
+.arrow:hover{
+    background-color: #D7A498;
+    color: #D7A498;
+}
+.arrow:hover span {
+    transform: translateY(-4px);
+    color: #3C2313;
+    font-size: 2rem;
+    transition: .5s ease-out;
+}
 .review {
     display: flex;
     justify-content: space-between;
@@ -152,6 +184,10 @@ body {
     margin: 20px 10px;
     box-shadow: 0px 2px 2px #6e5f4a;
     padding: 15px 20px;
+}
+.box:hover{
+    transform: translateY(-15px);
+    transition: 2s ease-out;
 }
 .menu {
     max-width: 1100px;
@@ -267,7 +303,7 @@ body {
 }
 .card p{
     color: #FDF5E6;
-    text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.1em #000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.614), 0 0 1em #000, 0 0 0.1em #000000;
 }
 /* Upcoming Events Section Ends */
 fieldset {
