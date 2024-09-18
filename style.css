@@ -367,6 +367,9 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
 }
+#opening-hours-section {
+    padding-bottom: 20px;
+}
 .row {
     display: table;
     max-width: 450px;
