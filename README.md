@@ -6,8 +6,8 @@ This project is a static, 5-page website created using only HTML and CSS. The we
 
 ## Project Links
 
-Hosted Website: https://christianaao.github.io/coffee-shop-project/index.html <br>
-Site Repo: https://github.com/christianaao/coffee-shop-project
+Hosted Website: https://christianaao.github.io/coffee-shop/index.html <br>
+Site Repo: https://github.com/christianaao/coffee-shop
 
 ## Features of this Project
 
